@@ -1,9 +1,10 @@
 import React, { useState, useRef } from 'react';
 import { Container, Row,Col, Card, Form, Button } from 'react-bootstrap';
-
+import { useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
+  const navigate=useNavigate();
   const [haveAccount, setHaveAccount] = useState(true);
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -23,6 +24,8 @@ const Login = () => {
   }
 
   const loginFormHandler = async (event) => {
+
+    navigate('/main')
     event.preventDefault();
 
     if (
@@ -87,7 +90,7 @@ const Login = () => {
                     />
                 )}
                 <div className='d-flex justify-content-center'>
-                    <Button type='submit'>{haveAccount ? 'Login' : 'Sign Up'}</Button>
+                    <Button type='submit' >{haveAccount ? 'Login' : 'Sign Up'}</Button>
                 </div>
                 </Form>
                 <div onClick={AccountHandler} className='mt-3 d-flex justify-content-center'>
