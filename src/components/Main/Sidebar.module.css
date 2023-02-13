@@ -1,0 +1,41 @@
+.sidebar {
+    position:fixed;
+    top: 10;
+    
+    width: 150px;
+    height: 150vh;
+    background-color: #c7c7c7;
+    padding-top: 120px;
+  }
+  
+  .sidebar button {
+    text-align: center;
+    margin: 1em;
+    margin-top: 2em;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #0d6efd;
+    border: none;
+    width: 78%;
+    cursor: pointer;
+  }
+  
+  .sidebar li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 1em;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  
+  .sidebar .sent,
+  .sidebar .received {
+    color: white;
+    font-weight: bold;
+    background-color: #0d6efd;
+    border-left: #04325e 3px solid;
+  }
