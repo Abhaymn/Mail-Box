@@ -150,4 +150,5 @@ export const updateMail = (emailUrl, loggedUserEmail, currentMailData) => {
     }
     
   };
+  
 };
