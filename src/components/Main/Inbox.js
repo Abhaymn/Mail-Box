@@ -14,6 +14,7 @@ const Inbox = () => {
     <MailData key={mail.id} mail={mail} mailId={mail.from} toOrFrom='From : '/>
   ));
 
+  
   return (
     <div className={classes.main}>
       {mailData}
