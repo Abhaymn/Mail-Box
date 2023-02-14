@@ -15,6 +15,7 @@ const Inbox = () => {
   ));
 
   
+  
   return (
     <div className={classes.main}>
       {mailData}
