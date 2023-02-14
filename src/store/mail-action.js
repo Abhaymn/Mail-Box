@@ -99,6 +99,7 @@ export const deleteMail = (mail) => {
           method: 'DELETE',
         }
       );
+      
 
       const data = await response.json();
 
